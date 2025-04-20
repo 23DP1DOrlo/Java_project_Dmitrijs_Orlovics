@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    background-color: #D9D9D9;
+    background-color:   #D9D9D9;
     color: black;
     padding-top: 80px; 
 }
@@ -129,7 +129,7 @@ header a.active {
 }
 
 .timer {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(226, 223, 223, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
@@ -139,6 +139,13 @@ header a.active {
     width: 1000px;
     height: 270px;
 }
+
+.timer > h2 {
+    font-size: 39px;
+    color:rgb(138, 6, 6);
+}
+
+
 
 #about-us p {
     font-weight: 300;
@@ -238,7 +245,7 @@ hr {
     background-color: white;
     border-radius: 12px;
     padding: 20px;
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -300,57 +307,80 @@ footer {
 
 /* tablets */
 @media screen and (max-width: 1024px) {
-    .section-content, .section-content2 {
-        flex-direction: column;
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-left {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .nav-container {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .download-btn {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+
+    #hero {
+        padding: 40px 10px;
+        height: auto;
         text-align: center;
     }
 
-    h1 {
-        font-size: 36px;
+    .herodiv h1 {
+        font-size: 80px;
+        margin: 0;
+        padding-bottom: 20px;
     }
 
-    .description, .description2,
-    .code-left, .code-right {
+    #simple-timer,
+    #message {
+        font-size: 28px;
+    }
+
+    .timer {
         width: 90%;
-        margin-bottom: 20px;
-    }
-
-    header {
-        flex-direction: column;
         height: auto;
-        padding: 10px 0;
-    }
-
-    #hizin {
-        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
     }
 }
 
 /* phones */
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
     }
 
-    h1 {
-        font-size: 28px;
+    .nav-left {
+        flex-direction: row;
+        gap: 15px;
     }
 
-    h2 {
-        font-size: 24px;
+    .nav-container {
+        gap: 15px;
     }
 
+    .download-btn {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
     .herodiv h1 {
-        font-size: 36px;
+        font-size: 45px;
+        margin: 0;
+        padding-bottom: 20px;
     }
-
-    section > div > p,
-    div > p,
-    section > p {
-        width: 100%;
-        font-size: 16px;
-    }
-
     #hero,
     #about-us {
         padding: 40px 10px;
@@ -359,5 +389,15 @@ footer {
     #simple-timer,
     #message {
         font-size: 28px;
+    }
+
+    .timer {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .solver img {
+        width: 70%;
     }
 }

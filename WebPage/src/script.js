@@ -34,8 +34,17 @@ function stopTimer() {
     const currentTime = performance.now();
     elapsed += currentTime - startTime;
     isRunning = false;
+
+     
     
-    const totalTimeInSeconds = Math.floor(elapsed / 1000);
+    const totalTimeInSeconds = +(elapsed / 1000).toFixed(2);
+    console.log("Total time (rounded):", totalTimeInSeconds);
+
+    if (totalTimeInSeconds > 3.05) {
+        document.getElementById('simple-timer').style.color = 'green';
+    } else {
+    document.getElementById('simple-timer').style.color = 'red';
+    }
     if (totalTimeInSeconds < 7) {
         messageElement.textContent = "Did you even turn the cube, or was that just magic?";
     } 
@@ -45,8 +54,8 @@ function stopTimer() {
     else if (totalTimeInSeconds < 15) {
         messageElement.textContent = "15 seconds? Are you secretly a CFOP master?";
     } 
-    else if (totalTimeInSeconds < 20) {
-        messageElement.textContent = "Under 20? You’re probably out here solving OLL cases blindfolded.";
+    else if (totalTimeInSeconds < 23) {
+        messageElement.textContent = "Under 23? You’re probably out here solving OLL cases blindfolded.";
     } else {
         messageElement.textContent = "30 seconds or less? Guess you’re on your way to becoming the next speedcubing legend, just learn OLLs and PLLs.";
     }
@@ -71,7 +80,8 @@ document.addEventListener("keyup", (e) => {
             startTimer();
         } else if (isRunning) {
             stopTimer();
-        }
+    }
+        
     }
 });
 document.addEventListener("keydown", (e) => {
@@ -112,6 +122,6 @@ window.addEventListener("scroll", () => {
     spawnFallingImage();
     scrollTimeout = setTimeout(() => {
       scrollTimeout = null;
-    }, 400);
+    }, 600);
   }
 });
