@@ -24,7 +24,7 @@ class Timer:
                 self.stop_timer()
             else:
                 print(f"❌ Held only {hold_duration:.2f}s — too short.")
-            return False  # выход из слушателя
+            return False  
 
     def stop_timer(self):
         end = time.time()

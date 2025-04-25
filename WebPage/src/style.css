@@ -1,403 +1,395 @@
-html {
-    scroll-behavior: smooth;
-
-}
 body {
-    z-index: 2;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    background-color:   #D9D9D9;
-    color: black;
-    padding-top: 80px; 
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  background-color:   #D9D9D9;
+  color: black;
+  padding-top: 80px; 
 }
-
-
 
 header {
-    background-color: transparent;
-    padding: 20px;
-    padding-left: 220px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transform: scale(1.1);
-  }
-  
+  background-color: transparent;
+  padding: 20px;
+  padding-left: 220px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: scale(1.1);
+}
+
 .nav-container {
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 170px;
-    align-items: center;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 170px;
+  align-items: center;
 }
-  
+
 .nav-left {
-    display: flex;
-    gap: 30px;
-    background-color: #2b1b1a;
-    padding: 12px 30px;
-    border-radius: 999px;
+  display: flex;
+  gap: 30px;
+  background-color: #2b1b1a;
+  padding: 12px 30px;
+  border-radius: 999px;
 }
-  
+
 .nav-left a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-left a:hover {
-    transform: scale(1.05) translateY(-0.5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) translateY(-0.5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-  
+
 .download-btn {
-    background-color: #2b1b1a;
-    color: white;
-    padding: 12px 28px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #2b1b1a;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .download-btn:hover {
-    transform: scale(1.015) translateY(-1.5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.015) translateY(-1.5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-  
+
 #hizin {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 #logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
 }
 
 header a {
-    color: #d5e2e8;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 5px;
-    transition: transform 0.3s ease;
+  color: #d5e2e8;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 5px;
+  transition: transform 0.3s ease;
 }
 
 header a:hover {
-    transform: translateY(-1.5px);
+  transform: translateY(-1.5px);
 }
 header a.active {
-    border-bottom: 2px solid #fff;
-  }
+  border-bottom: 2px solid #fff;
+}
 
 #hero {
-    
-    display: flex;
-    align-items: flex-end;  
-    justify-content: flex-start;
-    padding: 60px 20px;
-    height: 500px;
-    background-color: transparent;
+  
+  display: flex;
+  align-items: flex-end;  
+  justify-content: flex-start;
+  padding: 60px 20px;
+  height: 500px;
+  background-color: transparent;
 }
 
 .herodiv {
-    text-align: left;
+  text-align: left;
 }
 
 .herodiv h1 {
-    font-size: 100px;
-    margin: 0;
-    padding-left: 90px;
-    padding-bottom: 90px;
+  font-size: 100px;
+  margin: 0;
+  padding-left: 90px;
+  padding-bottom: 90px;
 }
 
 #about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .timer {
-    background: rgba(226, 223, 223, 0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    color: #fff;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 1000px;
-    height: 270px;
+  background: rgba(226, 223, 223, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 1000px;
+  height: 270px;
 }
 
 .timer > h2 {
-    font-size: 39px;
-    color:rgb(138, 6, 6);
+  font-size: 39px;
+  color:rgb(138, 6, 6);
 }
 
-
-
 #about-us p {
-    font-weight: 300;
-    font-size: 20px;
-    max-width: 1000px;
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 1000px;
 }
 
 #simple-timer,
 #message {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
 }
 
 section {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .section-content,
 .section-content2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .description, .description2, .code-left, .code-right {
-    flex: 1 1 400px;
-    max-width: 500px;
-    text-align: center;
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
 }
 
 .description2 {
-    text-align: right;
+  text-align: right;
 }
 
 .text-right {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .section > div > p, div > p {
-    width: 100%;
-    max-width: 600px;
-    font-size: 20px;
-    margin: auto;
+  width: 100%;
+  max-width: 600px;
+  font-size: 20px;
+  margin: auto;
 }
 
 .center-title {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 p {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 hr {
-    border: 2px solid black; 
-    width: 100%;
+  border: 2px solid black; 
+  width: 100%;
 }
 
 #pro-solvers {
-    background-color: #D9D9D9;
-    padding: 60px 20px;
-    text-align: center;
+  background-color: #D9D9D9;
+  padding: 60px 20px;
+  text-align: center;
 }
-  
+
 #pro-solvers h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 800;
 }
-  
+
 .solvers-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-  
+
 .solver {
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .solver:hover {
-    transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-  
+
 .solver img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
 }
-  
+
 .solver p {
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 200;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 200;
 }
 
 footer {
-    background-color: #2c2c2c;
-    display: grid;
-    place-items: center;
-    height: 50px;
-    width: 100%;
-    color: white;
-    font-size: 14px;
-    padding: 10px 0;
+  background-color: #2c2c2c;
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  padding: 10px 0;
 }
 
 .falling-objects {
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.falling {
+  position: absolute;
+  width: 40px;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
   }
-  
-  .falling {
-    position: absolute;
-    width: 40px;
-    animation: fall 3s linear forwards;
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
   }
-  
-  @keyframes fall {
-    0% {
-      transform: translateY(-100px) rotate(0deg);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(100vh) rotate(360deg);
-      opacity: 0;
-    }
-  }
+}
 
 /* tablets */
 @media screen and (max-width: 1024px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
+  header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
 
-    .nav-left {
-        flex-direction: row;
-        gap: 20px;
-    }
+  .nav-left {
+      flex-direction: row;
+      gap: 20px;
+  }
 
-    .nav-container {
-        gap: 20px;
-        align-items: center;
-    }
+  .nav-container {
+      gap: 20px;
+      align-items: center;
+  }
 
-    .download-btn {
-        margin-top: 10px;
-        align-self: flex-start;
-    }
+  .download-btn {
+      margin-top: 10px;
+      align-self: flex-start;
+  }
 
-    #hero {
-        padding: 40px 10px;
-        height: auto;
-        text-align: center;
-    }
+  #hero {
+      padding: 40px 10px;
+      height: auto;
+      text-align: center;
+  }
 
-    .herodiv h1 {
-        font-size: 80px;
-        margin: 0;
-        padding-bottom: 20px;
-    }
+  .herodiv h1 {
+      font-size: 80px;
+      margin: 0;
+      padding-bottom: 20px;
+  }
 
-    #simple-timer,
-    #message {
-        font-size: 28px;
-    }
+  #simple-timer,
+  #message {
+      font-size: 28px;
+  }
 
-    .timer {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-        padding: 20px;
-    }
+  .timer {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      padding: 20px;
+  }
 }
 
 /* phones */
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
+  header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
 
-    .nav-left {
-        flex-direction: row;
-        gap: 15px;
-    }
+  .nav-left {
+      flex-direction: row;
+      gap: 15px;
+  }
 
-    .nav-container {
-        gap: 15px;
-    }
+  .nav-container {
+      gap: 15px;
+  }
 
-    .download-btn {
-        margin-top: 10px;
-        align-self: flex-start;
-    }
-    .herodiv h1 {
-        font-size: 45px;
-        margin: 0;
-        padding-bottom: 20px;
-    }
-    #hero,
-    #about-us {
-        padding: 40px 10px;
-    }
+  .download-btn {
+      margin-top: 10px;
+      align-self: flex-start;
+  }
+  .herodiv h1 {
+      font-size: 45px;
+      margin: 0;
+      padding-bottom: 20px;
+  }
+  #hero,
+  #about-us {
+      padding: 40px 10px;
+  }
 
-    #simple-timer,
-    #message {
-        font-size: 28px;
-    }
+  #simple-timer,
+  #message {
+      font-size: 28px;
+  }
 
-    .timer {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
+  .timer {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+  }
 
-    .solver img {
-        width: 70%;
-    }
+  .solver img {
+      width: 70%;
+  }
 }

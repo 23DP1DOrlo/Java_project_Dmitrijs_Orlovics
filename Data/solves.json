@@ -1,26 +1,16 @@
 [
   {
-    "time_taken": 1.14,
-    "date": "2025-04-19 15:27",
+    "time": 1.08,
+    "date": "2025-04-23 10:39",
     "cube_type": "3x3",
-    "penalty": "OK"
+    "comment": "",
+    "user": "quikse"
   },
   {
-    "time_taken": 1.71,
-    "date": "2025-04-19 15:27",
+    "time": 4.63,
+    "date": "2025-04-25 10:15",
     "cube_type": "3x3",
-    "penalty": "OK"
-  },
-  {
-    "time_taken": 2.84,
-    "date": "2025-04-19 15:29",
-    "cube_type": "3x3",
-    "penalty": "+2"
-  },
-  {
-    "time_taken": 3.64,
-    "date": "2025-04-19 20:01",
-    "cube_type": "3x3",
-    "penalty": "+2"
+    "comment": "",
+    "user": "as"
   }
 ]
