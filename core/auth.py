@@ -1,7 +1,7 @@
 import json
 
 class AuthManager:
-    def __init__(self, filepath="PYTHON_Project_Timer/Data/users.json"):
+    def __init__(self, filepath="Data/users.json"):
         self.filepath = filepath
         self.users = self.load_users()
 
@@ -10,7 +10,7 @@ class AuthManager:
             with open(self.filepath, "r") as file:
                 return json.load(file)
         except (FileNotFoundError, json.JSONDecodeError):
-            return []  # Если файл не существует или пустой, возвращаем пустой список
+            return []
 
     def save_users(self):
         with open(self.filepath, "w") as file:
@@ -23,11 +23,9 @@ class AuthManager:
         return False, "Invalid username or password."
 
     def sign_up(self, username, password):
-        # Проверка на существование пользователя
         for user in self.users:
             if user["username"] == username:
                 return False, "Username already exists."
-        # Добавление нового пользователя
         self.users.append({"username": username, "password": password})
-        self.save_users()  # Сохраняем данные пользователей после регистрации
+        self.save_users()
         return True, f"User {username} successfully registered."

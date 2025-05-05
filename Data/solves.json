@@ -1,16 +1,20 @@
 [
-  {
-    "time": 1.08,
-    "date": "2025-04-23 10:39",
-    "cube_type": "3x3",
-    "comment": "",
-    "user": "quikse"
-  },
-  {
-    "time": 4.63,
-    "date": "2025-04-25 10:15",
-    "cube_type": "3x3",
-    "comment": "",
-    "user": "as"
-  }
+    {
+        "username": "as",
+        "scramble": "B' U' B R L D L2 U' R' F' R2 L2 R2 F D R B' F' B' F",
+        "time_taken": 2.48,
+        "timestamp": "2025-05-02 17:17:35"
+    },
+    {
+        "username": "adrians",
+        "scramble": "F R' U F B' L' D2 F' D F2 D L' D' B' F' U2 D' R' U' B2",
+        "time_taken": 2.21,
+        "timestamp": "2025-05-02 17:18:06"
+    },
+    {
+        "username": "mimi",
+        "scramble": "R' D F2 B2 L U L' U2 D' R2 L R U F2 L' B D' L2 U B",
+        "time_taken": 5.18,
+        "timestamp": "2025-05-03 20:39:22"
+    }
 ]

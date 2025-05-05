@@ -1,0 +1,20 @@
+[
+    {
+        "username": "as",
+        "scramble": "F D2 U F' D R B' L R U' F D' L' F' L' D' B' L D2 F2",
+        "time_taken": 2.43,
+        "timestamp": "2025-05-02 17:10:18"
+    },
+    {
+        "username": "as",
+        "scramble": "U L' D B D2 U2 D B2 L U F U' R2 B L B' U2 R2 L' F",
+        "time_taken": 4.92,
+        "timestamp": "2025-05-02 17:10:35"
+    },
+    {
+        "username": "quikse1",
+        "scramble": "F2 D L2 R' B2 F2 R2 D L F' L F' R' L R' F' U' D2 U2 L'",
+        "time_taken": 10.74,
+        "timestamp": "2025-05-02 17:11:35"
+    }
+]
