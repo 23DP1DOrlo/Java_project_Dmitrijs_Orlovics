@@ -50,7 +50,7 @@ Lai palaistu lietojumprogrammu, ir jābūt instalētam Python un nepieciešamaj�
 
 Programma sastāv no vairākiem moduļiem:
 
-- **``timer_window.py`**: Galvenā taimera loga klase, kas pārvalda laiku un montāžas sesijas.
+- **`timer_window.py`**: Galvenā taimera loga klase, kas pārvalda laiku un montāžas sesijas.
 - **`auth.py`**: Modulis lietotāju autentifikācijai (pieteikšanās un reģistrācija).
 - **`scramble_generator.py`**: Rubika kuba nejaušības kodu ģenerators.
 - **`login_window.py`**: Logs pieteikšanās un jauna lietotāja reģistrēšanai.
