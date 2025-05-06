@@ -1,2 +1,2 @@
-# Java_project_Dmitrijs_Orlovics
-Java project
+# PYTHON_Project_Dmitrijs_Orlovics
+PYTHON project

@@ -1,222 +1,179 @@
-import json
 import time
-import csv
-from datetime import datetime
-
-from PyQt5.QtWidgets import (
-    QWidget, QVBoxLayout, QLabel, QListWidget,
-    QPushButton, QHBoxLayout, QSpacerItem, QSizePolicy, QMessageBox
-)
+import json
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton, QHBoxLayout, QSpacerItem, QSizePolicy
 from PyQt5.QtCore import Qt, QTimer
-
-# Заглушка scramble (можно заменить на свой генератор)
-def generate_scramble():
-    return "R U R' U R U2 R'"
+from core.scramble_generator import generate_scramble  # Убедись, что этот импорт правильный
 
 class TimerWindow(QWidget):
     def __init__(self, username):
         super().__init__()
         self.setWindowTitle("Cube Timer")
-        self.setGeometry(500, 150, 700, 550)
+        self.setGeometry(500, 150, 600, 500)
 
         self.username = username
-        self.timer_running = False
-        self.hold_start_time = None
+        self.timer_running = False  # Флаг работы таймера
+        self.key_hold_start = None
         self.start_time = None
-        self.elapsed_time = 0.0
-        self.json_path = "PYTHON_Project_Timer/Data/solves.json"
+        self.elapsed_time = 0
 
+        self.scramble = generate_scramble()  # Генерация первого скрамбла
+        self.init_ui()
+
+        # Таймер для обновления времени
+        self.timer = QTimer(self)
+        self.timer.timeout.connect(self.update_timer)  # Будет вызываться каждый раз, когда таймер "выполняет" timeout
+        self.timer.start(10)  # Обновлять каждую 10 миллисекунд для сотых долей секунды
+
+    def init_ui(self):
         self.layout = QVBoxLayout()
+        self.layout.setSpacing(12)
 
-        self.scramble = generate_scramble()
-        self.scramble_label = QLabel(f"<b>Scramble:</b> {self.scramble}")
+        self.scramble_label = QLabel(f"Scramble: {self.scramble}")  # Отображаем скрамбл
         self.scramble_label.setAlignment(Qt.AlignCenter)
 
-        self.time_label = QLabel("00.00")
+        self.time_label = QLabel("00.00")  # Начальное значение таймера
         self.time_label.setAlignment(Qt.AlignCenter)
-        self.time_label.setStyleSheet("font-size: 36px; color: #2e8b57")
+        self.time_label.setStyleSheet("font-size: 32px; color: #2e8b57")
 
         self.info_label = QLabel("Hold SPACE for 0.5s to start. Press any key to stop.")
         self.info_label.setAlignment(Qt.AlignCenter)
 
-        self.solve_list = QListWidget()
-        self.solve_list.setMinimumHeight(200)
+        # Добавляем элементы для отображения AO5 и AO12
+        self.ao5_label = QLabel("AO5: -")
+        self.ao12_label = QLabel("AO12: -")
+        self.ao5_label.setAlignment(Qt.AlignCenter)
+        self.ao12_label.setAlignment(Qt.AlignCenter)
 
-        self.ao5_label = QLabel("ao5: -")
-        self.ao12_label = QLabel("ao12: -")
+        self.start_button = QPushButton("New Solve")
+        self.start_button.setFixedWidth(150)
+        self.start_button.clicked.connect(self.prepare_new_solve)
 
-        # Кнопки
-        self.new_solve_btn = QPushButton("New Solve")
-        self.new_solve_btn.setFixedWidth(120)
-        self.new_solve_btn.clicked.connect(self.reset_timer)
-
-        self.delete_btn = QPushButton("Delete Selected")
-        self.delete_btn.setFixedWidth(120)
-        self.delete_btn.clicked.connect(self.delete_selected)
-
-        self.export_btn = QPushButton("Export CSV")
-        self.export_btn.setFixedWidth(120)
-        self.export_btn.clicked.connect(self.export_to_csv)
-
-        btn_layout = QHBoxLayout()
-        btn_layout.addWidget(self.new_solve_btn)
-        btn_layout.addWidget(self.delete_btn)
-        btn_layout.addWidget(self.export_btn)
+        bottom_layout = QHBoxLayout()
+        bottom_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Expanding))
+        bottom_layout.addWidget(self.start_button)
+        bottom_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Expanding))
 
         self.layout.addWidget(self.scramble_label)
         self.layout.addWidget(self.time_label)
         self.layout.addWidget(self.info_label)
-        self.layout.addWidget(self.solve_list)
-        self.layout.addWidget(self.ao5_label)
-        self.layout.addWidget(self.ao12_label)
-        self.layout.addLayout(btn_layout)
-
+        self.layout.addWidget(self.ao5_label)  # Добавляем AO5
+        self.layout.addWidget(self.ao12_label)  # Добавляем AO12
+        self.layout.addLayout(bottom_layout)
         self.setLayout(self.layout)
 
-        self.timer = QTimer()
-        self.timer.timeout.connect(self.update_display)
-
-        self.load_user_solves()
-        self.update_averages()
-
     def keyPressEvent(self, event):
-        if not self.timer_running and event.key() == Qt.Key_Space:
-            self.hold_start_time = time.time()
+        """Задержка удержания пробела, запускающая таймер"""
+        if event.key() == Qt.Key_Space and not self.timer_running:
+            if self.key_hold_start is None:
+                # Начало отсчета, если пробел удерживается
+                self.key_hold_start = time.time()
 
     def keyReleaseEvent(self, event):
-        if self.timer_running:
-            self.stop_timer()
-        elif self.hold_start_time and event.key() == Qt.Key_Space:
-            held_duration = time.time() - self.hold_start_time
-            if held_duration >= 0.5:
-                self.start_timer()
-            else:
-                self.info_label.setText("❌ Hold at least 0.5s to start timer")
-            self.hold_start_time = None
+        """Останавливаем таймер по отпусканию пробела или любой клавиши"""
+        if event.key() == Qt.Key_Space:
+            if self.key_hold_start is not None:
+                duration = time.time() - self.key_hold_start
+                self.key_hold_start = None
 
-    def start_timer(self):
-        self.start_time = time.time()
-        self.elapsed_time = 0.0
-        self.timer_running = True
-        self.timer.start(10)
-        self.info_label.setText("⏱️ Timer started! Press any key to stop.")
+                if duration >= 0.5 and not self.timer_running:
+                    # Таймер начинает отсчет после 0.5 секунд
+                    self.timer_running = True
+                    self.start_time = time.time() - self.elapsed_time  # продолжаем с последнего времени
+                    self.info_label.setText("⏱️ Timer started! Press any key to stop.")
+                else:
+                    self.info_label.setText("❌ Hold at least 0.5s to start timer")
+
+        # При отпускании пробела или любой клавиши останавливаем таймер
+        elif (event.key() == Qt.Key_Space or event.key() != Qt.Key_Space) and self.timer_running:
+            self.stop_timer()
+
+    def update_timer(self):
+        """Обновление времени таймера (сотые секунды)"""
+        if self.timer_running:
+            elapsed = time.time() - self.start_time
+            self.time_label.setText(f"{elapsed:.2f} s")  # Отображаем время с сотыми долями секунды
 
     def stop_timer(self):
-        self.timer.stop()
+        """Остановка таймера и сохранение результата в JSON файл"""
         self.timer_running = False
         self.elapsed_time = time.time() - self.start_time
-        self.time_label.setText(f"{self.elapsed_time:.2f}")
-        self.save_result(self.elapsed_time)
+        self.time_label.setText(f"{self.elapsed_time:.2f} s")
+
+        # Сохраняем результат в JSON
+        self.save_result()
+
+        # Генерация нового скрамбла для следующей сборки
+        self.scramble = generate_scramble()
+        self.scramble_label.setText(f"Scramble: {self.scramble}")  # Обновление метки скрамбла
+
+        self.info_label.setText("Hold SPACE for 0.5s to start. Press any key to stop.")
+        self.reset_timer()
+
+        # Обновляем AO5 и AO12
         self.update_averages()
 
-    def update_display(self):
-        if self.timer_running:
-            current_time = time.time() - self.start_time
-            self.time_label.setText(f"{current_time:.2f}")
-
-    def reset_timer(self):
-        self.timer.stop()
-        self.timer_running = False
-        self.scramble = generate_scramble()
-        self.scramble_label.setText(f"<b>Scramble:</b> {self.scramble}")
-        self.time_label.setText("00.00")
-        self.info_label.setText("Hold SPACE for 0.5s to start. Press any key to stop.")
-
-    def save_result(self, time_taken):
-        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    def save_result(self):
+        """Запись результата в JSON файл"""
         result = {
             "username": self.username,
-            "time_taken": round(time_taken, 2),
-            "date": now
+            "scramble": self.scramble,
+            "time_taken": round(self.elapsed_time, 2),
+            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
         }
 
+        # Чтение существующих данных из файла, если есть
         try:
-            with open(self.json_path, "r") as file:
+            with open("Data/solves.json", "r") as file:
                 results = json.load(file)
         except (FileNotFoundError, json.JSONDecodeError):
             results = []
 
+        # Добавляем новый результат в список
         results.append(result)
 
-        with open(self.json_path, "w") as file:
+        # Записываем данные обратно в файл
+        with open("Data/solves.json", "w") as file:
             json.dump(results, file, indent=4)
 
-        self.solve_list.addItem(f"{now} - {time_taken:.2f}s")
+    def prepare_new_solve(self):
+        """Подготовка к новому решению"""
+        self.time_label.setText("00.00")
+        self.elapsed_time = 0
+        self.info_label.setText("Hold SPACE for 0.5s to start. Press any key to stop.")
+        
+        self.scramble = generate_scramble()  # Генерация нового скрамбла
+        self.scramble_label.setText(f"Scramble: {self.scramble}")  # Обновление метки скрамбла
 
-    def load_user_solves(self):
-        self.solve_list.clear()
-        try:
-            with open(self.json_path, "r") as file:
-                results = json.load(file)
-        except (FileNotFoundError, json.JSONDecodeError):
-            results = []
-
-        for r in results:
-            if r["username"] == self.username:
-                self.solve_list.addItem(f"{r['date']} - {r['time_taken']:.2f}s")
+    def reset_timer(self):
+        """Сброс таймера после остановки"""
+        self.elapsed_time = 0
+        self.start_time = None
+        self.timer_running = False
 
     def update_averages(self):
+        """Обновление статистики AO5 и AO12"""
         try:
-            with open(self.json_path, "r") as file:
+            with open("Data/solves.json", "r") as file:
                 results = json.load(file)
         except (FileNotFoundError, json.JSONDecodeError):
             results = []
 
         user_times = [r["time_taken"] for r in results if r["username"] == self.username]
 
+        # Рассчитываем AO5
         if len(user_times) >= 5:
             ao5 = sum(user_times[-5:]) / 5
             self.ao5_label.setText(f"ao5: {ao5:.2f}")
         else:
             self.ao5_label.setText("ao5: -")
 
+        # Рассчитываем AO12
         if len(user_times) >= 12:
             ao12 = sum(user_times[-12:]) / 12
             self.ao12_label.setText(f"ao12: {ao12:.2f}")
         else:
             self.ao12_label.setText("ao12: -")
 
-    def delete_selected(self):
-        selected = self.solve_list.currentRow()
-        if selected == -1:
-            QMessageBox.warning(self, "Warning", "No solve selected.")
-            return
-
-        try:
-            with open(self.json_path, "r") as file:
-                results = json.load(file)
-        except (FileNotFoundError, json.JSONDecodeError):
-            results = []
-
-        # Filter user solves
-        user_solves = [r for r in results if r["username"] == self.username]
-
-        if selected >= len(user_solves):
-            return
-
-        del_index = results.index(user_solves[selected])
-        del results[del_index]
-
-        with open(self.json_path, "w") as file:
-            json.dump(results, file, indent=4)
-
-        self.load_user_solves()
-        self.update_averages()
-
-    def export_to_csv(self):
-        try:
-            with open(self.json_path, "r") as file:
-                results = json.load(file)
-        except:
-            results = []
-
-        user_solves = [r for r in results if r["username"] == self.username]
-        filename = f"{self.username}_solves.csv"
-
-        with open(filename, "w", newline="") as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=["date", "time_taken"])
-            writer.writeheader()
-            for r in user_solves:
-                writer.writerow({"date": r["date"], "time_taken": r["time_taken"]})
-
-        QMessageBox.information(self, "Exported", f"Solves exported to {filename}")
+    def closeEvent(self, event):
+        """Закрытие окна таймера"""
+        event.accept()
