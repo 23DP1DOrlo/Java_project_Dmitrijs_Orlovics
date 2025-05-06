@@ -646,5 +646,11 @@
         "scramble": "F D' L2 U L2 B' F B2 U2 F B U2 R L2 U' L2 F2 U B R2",
         "time_taken": 0.9,
         "timestamp": "2025-05-06 21:09:44"
+    },
+    {
+        "username": "dima",
+        "scramble": "B2 U' F' R B F2 B2 D' U F' L' B2 U2 L2 R' B R2 U' R L2",
+        "time_taken": 1.0,
+        "timestamp": "2025-05-06 21:15:23"
     }
 ]
