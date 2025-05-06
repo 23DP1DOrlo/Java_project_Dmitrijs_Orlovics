@@ -101,7 +101,7 @@ window.addEventListener("keydown", function (e) {
 // CUBES
 const fallingContainer = document.querySelector(".falling-objects");
 const imageSources = [
-  "/PYTHON_Project_Timer/WebPage/src/images/svg/cube.svg"
+  "WebPage/src/images/svg/cube.svg"
 ];
 
 function spawnFallingImage() {
