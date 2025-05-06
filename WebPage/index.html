@@ -19,15 +19,30 @@
                 <a href="#user-guide">User guide</a> 
             </div>
             <div class="download-btn">
-            <a href="#">Download</a>
-        </div>
-        </div>
+                <a href="/PYTHON_Project_Timer/WebPage/src/project/PYTHON_Project_Timer.zip" download class="button">Download</a>
+            </div>
+    
+       </div>
         </header>
-    <section id="hero">
-        <div class="herodiv">
-            <h1><small>Your </small><strong>Perfect</strong><br><small>Cube Timer</small></h1>
-        </div>
-    </section>
+        <section id="hero">
+            <div class="hero-container">
+              <div class="herodiv">
+                <h1>
+                  <small>Your </small><strong>Perfect</strong><br>
+                  <small>Cube Timer</small>
+                </h1>
+              </div>
+              <div class="live-stats">
+                <h3>Statistics in real time</h3>
+                <ul>
+                  <li>Sessions today: <span id="sessions">0</span></li>
+                  <li>Users online: <span id="users">0</span></li>
+                  <li>Countries: <span id="countries">0</span></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
     <br>
     <hr>
     <section id="about-us">
@@ -64,7 +79,42 @@
       <br>
       <hr>
       <section id="user-guide">
-        <h2><strong>User guide</strong></h2>
+        <div class="user-guide-container">
+            <h2>Getting Started with the Desktop App</h2>
+            <p>This section will guide you through downloading, installing, and using the <strong>RC Timer Desktop App</strong> created with PyQt5.</p>
+          
+            <div class="guide-step">
+              <h3>1. Installation</h3>
+              <p>To run the desktop version, make sure you have <strong>Python 3.10+</strong> installed.</p>
+            </div>
+          
+            <div class="guide-step">
+              <h3>2. Launch the App</h3>
+              <p>Navigate to the project folder and run:</p>
+              <code>python main.py</code>
+              <p>The application window will open with the RC Timer interface.</p>
+            </div>
+          
+            <div class="guide-step">
+              <h3>3. Usage</h3>
+              <ul>
+                <li>Press and hold <strong>Space</strong> to start and stop the timer.</li>
+                <li>The time will display in real time with millisecond accuracy.</li>
+                <li>Based on your solve time, you’ll receive fun motivational messages.(On the website)</li>
+                <li>The app supports account logins, session tracking, and logout functionality.</li>
+              </ul>
+            </div>
+          
+            <div class="guide-step">
+              <h3>4. Known Issues</h3>
+              <ul>
+                <li>Make sure PyQt5 is correctly installed (use <code>pip install pyqt5</code> if not).</li>
+              </ul>
+            </div>
+          
+            <p>If you encounter bugs or have suggestions, feel free to contact the developer: <strong>Dmitrijs Orlovics</strong>.</p>
+          </div>
+          
       </section>
     <footer>
         All rights reserved Dmitrijs Orlovics

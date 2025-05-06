@@ -125,3 +125,39 @@ window.addEventListener("scroll", () => {
     }, 600);
   }
 });
+
+
+function animateNumber(id, start, end, duration) {
+    const el = document.getElementById(id);
+    let startTime = null;
+  
+    const step = timestamp => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const value = Math.floor(progress * (end - start) + start);
+      el.textContent = value;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+  
+    requestAnimationFrame(step);
+  }
+  
+  let sessions = 500 + Math.floor(Math.random() * 200);
+  let users = 50 + Math.floor(Math.random() * 30);
+  let countries = 20 + Math.floor(Math.random() * 10);
+  
+  animateNumber("sessions", 0, sessions, 1000);
+  animateNumber("users", 0, users, 1000);
+  animateNumber("countries", 0, countries, 1000);
+  
+  setInterval(() => {
+    sessions += Math.floor(Math.random() * 10);
+    users += Math.floor(Math.random() * 3 - 1);
+    countries += Math.floor(Math.random() * 2 - 1);
+  
+    animateNumber("sessions", parseInt(document.getElementById("sessions").textContent), sessions, 800);
+    animateNumber("users", parseInt(document.getElementById("users").textContent), users, 800);
+    animateNumber("countries", parseInt(document.getElementById("countries").textContent), countries, 800);
+  }, 5000);
+
+
