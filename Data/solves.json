@@ -706,5 +706,11 @@
         "scramble": "F2 R' U2 B U R2 B' F2 L' D' L F' B2 D2 F R' B2 F2 U2 R",
         "time_taken": 5.53,
         "timestamp": "2025-05-06 21:46:07"
+    },
+    {
+        "username": "quikse1",
+        "scramble": "F2 R2 L2 B2 R' F D' L' B' D2 L' R L B' L R D' L' R F2",
+        "time_taken": 1.0,
+        "timestamp": "2025-05-06 22:54:55"
     }
 ]
