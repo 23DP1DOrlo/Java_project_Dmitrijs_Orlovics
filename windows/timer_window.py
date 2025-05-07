@@ -35,7 +35,7 @@ class TimerWindow(QWidget):
         self.scramble_label = QLabel(f"Scramble: {self.scramble}")
         self.scramble_label.setAlignment(Qt.AlignCenter)
 
-        self.time_label = QLabel("00.00") 
+        self.time_label = QLabel("0.00") 
         self.time_label.setAlignment(Qt.AlignCenter)
         self.time_label.setStyleSheet("font-size: 32px; color: #2e8b57")
 
@@ -55,6 +55,17 @@ class TimerWindow(QWidget):
         bottom_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Expanding))
         bottom_layout.addWidget(self.start_button)
         bottom_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Expanding))
+        
+        self.logout_button = QPushButton("Logout")
+        self.logout_button.setFixedWidth(150)
+        self.logout_button.clicked.connect(self.logout)
+
+        logout_layout = QHBoxLayout()
+        logout_layout.addSpacerItem(QSpacerItem(100, 20, QSizePolicy.Expanding))
+        logout_layout.addWidget(self.logout_button)
+        logout_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Expanding))
+
+        self.timer_layout.addLayout(logout_layout)
 
         self.timer_layout.addWidget(self.scramble_label)
         self.timer_layout.addWidget(self.time_label)
@@ -240,6 +251,11 @@ class TimerWindow(QWidget):
         self.ao5_label.setText(f"ao5: {calculate_wca_average(self.session_times, 5)}")
         self.ao12_label.setText(f"ao12: {calculate_wca_average(self.session_times, 12)}")
 
-
+    def logout(self):
+        from windows.login_window import LoginWindow
+        self.login_window = LoginWindow()
+        self.login_window.show()
+        self.close()
+        
     def closeEvent(self, event):
         event.accept()

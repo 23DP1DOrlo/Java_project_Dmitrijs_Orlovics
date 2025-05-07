@@ -1,716 +1,152 @@
 [
     {
-        "username": "quikse1",
-        "scramble": "L' R' L' F2 D' R' F R2 D B' L' U' D2 L' D U F' L U' D2",
-        "time_taken": 2.66,
-        "timestamp": "2025-05-06 17:22:09"
+        "username": "test",
+        "scramble": "U2 L F R L2 B L2 D' L' U2 L U2 F' B' U D B F R' U",
+        "time_taken": 1.8,
+        "timestamp": "2025-05-07 14:08:32"
     },
     {
-        "username": "quikse1",
-        "scramble": "D R2 B2 R D2 L2 D' R' F' R2 L' B R U' B2 R2 B F' R L",
-        "time_taken": 3.74,
-        "timestamp": "2025-05-06 17:22:17"
+        "username": "test",
+        "scramble": "D' F R2 U2 F' B2 R' F2 L B2 U' B L2 F R D2 B' D' U D",
+        "time_taken": 1.58,
+        "timestamp": "2025-05-07 14:08:36"
     },
     {
-        "username": "quikse1",
-        "scramble": "U2 L2 U2 R L R F2 L2 B' L' B F' D' B2 U' R U' F D2 B2",
-        "time_taken": 0.78,
-        "timestamp": "2025-05-06 17:24:25"
+        "username": "test",
+        "scramble": "L' R2 L R F D L' B' U L2 U' F2 B R U' F U2 L' U2 R",
+        "time_taken": 3.18,
+        "timestamp": "2025-05-07 14:08:47"
     },
     {
-        "username": "quikse1",
-        "scramble": "U2 B' L' U' L R F' L2 R' D' B' R D2 U2 L2 F L2 D2 R' D2",
-        "time_taken": 2.4,
-        "timestamp": "2025-05-06 17:24:30"
+        "username": "test",
+        "scramble": "R' L B' L' R2 L2 F B' F' U L R U' B2 U F2 B D F2 U",
+        "time_taken": 0.67,
+        "timestamp": "2025-05-07 14:09:07"
     },
     {
-        "username": "quikse1",
-        "scramble": "F D R2 F R' F' D2 B2 L2 R B D2 F2 L2 D U' F L' U' B'",
-        "time_taken": 1.46,
-        "timestamp": "2025-05-06 17:27:17"
+        "username": "test",
+        "scramble": "U2 R2 F2 D2 B R' U' B L2 B' D R D2 F2 B2 F R D' U2 F2",
+        "time_taken": 1.01,
+        "timestamp": "2025-05-07 14:09:13"
     },
     {
-        "username": "quikse1",
-        "scramble": "B' U F L R' B2 D2 F2 D2 B2 D' F D B' R' U F' D' U2 F",
-        "time_taken": 0.97,
-        "timestamp": "2025-05-06 17:27:25"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U' L2 D L' R B2 R2 U' B' U2 R' B F B2 D' B' U' F2 U D'",
-        "time_taken": 0.72,
-        "timestamp": "2025-05-06 17:28:19"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U2 D2 L' F' B' D2 R2 L2 F' D' L' F' D2 R2 L2 R U L2 D2 F'",
-        "time_taken": 1.08,
-        "timestamp": "2025-05-06 17:31:52"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B L' R B2 L' F D2 U2 F' D' B F2 L D' L' D' R2 U D U",
-        "time_taken": 1.61,
-        "timestamp": "2025-05-06 17:34:51"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D2 U2 B2 L B' U2 L' B D2 U' B R2 D' L R' U' L2 R2 F R2",
-        "time_taken": 1.04,
-        "timestamp": "2025-05-06 17:35:02"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B' L F R2 F2 L F' R L2 D' U R' L2 R' F2 U' F2 D R B2",
-        "time_taken": 0.39,
-        "timestamp": "2025-05-06 17:35:04"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L U2 D' L2 B2 L B' L' D F2 L' F2 L' F' U' L' F R D2 U'",
-        "time_taken": 0.92,
-        "timestamp": "2025-05-06 17:35:06"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F L2 R F B L D2 U2 F2 B2 F B2 D' L U' F2 D2 B2 U D",
-        "time_taken": 1.65,
-        "timestamp": "2025-05-06 17:35:10"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B' R2 F' L2 U' F D L2 B U D' F L B R' L2 D' U2 L B",
-        "time_taken": 0.92,
-        "timestamp": "2025-05-06 17:35:14"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U2 L' B F' B' U F2 U2 B' F2 B2 R' D' L F' R' F' L' D F",
-        "time_taken": 0.55,
-        "timestamp": "2025-05-06 17:36:53"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L' D' R2 B R U2 R' D R F2 B2 F2 L' R2 B L U D2 R B'",
-        "time_taken": 0.87,
-        "timestamp": "2025-05-06 17:36:57"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F2 L' U' R D L D B L F L2 U2 R D2 L F D U2 F2 R'",
-        "time_taken": 0.4,
-        "timestamp": "2025-05-06 17:37:02"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B2 R B2 L2 U' D2 B' L2 B2 F2 L' F' D2 R' L2 F' U F' R' U'",
-        "time_taken": 2.48,
-        "timestamp": "2025-05-06 17:37:06"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D L B R D R L2 R B U B' L B2 F D2 R2 B' L' F' U2",
-        "time_taken": 0.94,
-        "timestamp": "2025-05-06 17:37:08"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F L2 D' R' D2 F2 U F B D' B2 U D2 F' B2 R2 L' U B2 D2",
-        "time_taken": 1.82,
-        "timestamp": "2025-05-06 17:39:28"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D2 F2 L F R2 U2 B R2 B L' F L2 R2 U' R2 F U L B2 D",
-        "time_taken": 0.82,
-        "timestamp": "2025-05-06 17:39:34"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R' F2 U' F L U' R2 U L' U' B L R L2 B U2 B D' F L'",
-        "time_taken": 0.41,
-        "timestamp": "2025-05-06 17:39:36"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B' U2 L D U2 D' R L2 U B' U' L' B' R B2 L D L' D2 L2",
-        "time_taken": 0.35,
-        "timestamp": "2025-05-06 17:39:38"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F' B2 F R' L' B2 D' R L' F2 R2 F L' U' F' R' U B2 R2 L",
-        "time_taken": 0.35,
-        "timestamp": "2025-05-06 17:39:39"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U L2 R' D' F B2 U F U2 L R2 D' F' B U2 B' F L U' B",
-        "time_taken": 1.08,
-        "timestamp": "2025-05-06 17:44:45"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R2 L R2 D B D2 U' D' F R L R2 L' F' D2 U2 D2 R' F U2",
-        "time_taken": 0.76,
-        "timestamp": "2025-05-06 17:44:47"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U2 F2 L' B' F B2 F D F' U' L' U2 D F2 L R F2 B F D'",
-        "time_taken": 0.47,
-        "timestamp": "2025-05-06 17:44:49"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B2 R' U R B U D R2 B' F L' F' U D2 U2 F2 U' L D2 F2",
-        "time_taken": 0.21,
-        "timestamp": "2025-05-06 17:44:50"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U2 F L' F2 D2 U' R' U L B2 F U2 L U B2 F B2 R' U2 D",
-        "time_taken": 0.19,
-        "timestamp": "2025-05-06 17:44:51"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L2 D' L2 U2 R' B R D B D B2 R' D R' U' L' B2 U' F2 R",
-        "time_taken": 0.25,
-        "timestamp": "2025-05-06 17:44:53"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F' R' L U D F' L' F' B' F2 B' D2 U2 R2 D2 B2 R L F R",
-        "time_taken": 0.27,
-        "timestamp": "2025-05-06 17:44:54"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D2 L' F' L U2 F' B2 R' B2 D' U' D2 R D' B' U' B2 R2 B2 L'",
-        "time_taken": 3.88,
-        "timestamp": "2025-05-06 17:45:02"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L' D2 U2 F' B L' R2 L F2 R' F' R' U R F2 D' L F2 L2 F",
-        "time_taken": 0.63,
-        "timestamp": "2025-05-06 17:47:50"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R B2 D2 R' D F2 B R' L' U' B2 D2 R2 D' F B' U' F' R L",
-        "time_taken": 1.87,
-        "timestamp": "2025-05-06 17:47:54"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D2 L2 D2 F' R' D' U2 R' B' U' B' R' D U R D B2 D' R' F'",
-        "time_taken": 0.81,
-        "timestamp": "2025-05-06 17:50:06"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R2 U R2 L' U' L' D' L' F' U B' L U' R2 D F B' L' D' F'",
-        "time_taken": 1.39,
-        "timestamp": "2025-05-06 17:50:10"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R2 D2 F R2 F' L2 R' B' L2 F2 D' U' L' B2 U2 L' R' L' F2 U",
-        "time_taken": 3.72,
-        "timestamp": "2025-05-06 17:52:14"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U' F2 D B' F U F L' R B' R' F2 R' D' R U' L R U D2",
-        "time_taken": 0.39,
-        "timestamp": "2025-05-06 17:52:29"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B L' F D U' L2 R2 L' R B' R B2 L' D L' B2 R2 B R' B2",
-        "time_taken": 0.28,
-        "timestamp": "2025-05-06 17:52:30"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D2 F2 B2 U' F U2 L R2 F B' U2 B' F' L F L2 B2 U' F2 B'",
-        "time_taken": 0.26,
-        "timestamp": "2025-05-06 17:52:32"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D' U2 R' F D' F2 U2 B2 D R F B2 L D2 U2 L' D' R L2 B'",
-        "time_taken": 0.19,
-        "timestamp": "2025-05-06 17:52:33"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L B' D B D2 U B R' D2 F U F' L' F2 D2 F' R2 D2 F2 U",
-        "time_taken": 0.86,
-        "timestamp": "2025-05-06 17:54:43"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F2 L' B R F' R' L' F U D2 L' B2 F' L2 R B D F R U2",
-        "time_taken": 0.41,
-        "timestamp": "2025-05-06 17:54:45"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U D B' R' F2 R D U2 F2 L2 D2 B R' U F2 R2 U D R L",
-        "time_taken": 0.24,
-        "timestamp": "2025-05-06 17:54:46"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B R2 D2 U' R U' B2 F' B' R2 D' R B' L' F U' R' D' U' F2",
-        "time_taken": 0.17,
-        "timestamp": "2025-05-06 17:54:47"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F D2 L2 D2 U2 B' R L F2 D' F2 D2 F2 R L2 R B U' F' L2",
-        "time_taken": 0.24,
-        "timestamp": "2025-05-06 17:54:48"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U2 B' L2 U' D' F' U' F2 B D B2 L R' F' R' F' U' F2 L U",
-        "time_taken": 0.19,
-        "timestamp": "2025-05-06 17:55:15"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D' B2 L' R' D L2 F' D R' D' B D U' R F B' F' L' U2 B'",
-        "time_taken": 0.22,
-        "timestamp": "2025-05-06 17:55:16"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L2 D R2 U' L U' F D2 F' L' U B F' D' B R2 D2 F R' L'",
-        "time_taken": 0.26,
-        "timestamp": "2025-05-06 17:55:19"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F' U' B D R2 F U' L2 U' L D' F2 U2 B' R U D B2 R' U",
-        "time_taken": 0.31,
-        "timestamp": "2025-05-06 17:55:21"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F2 B' F U2 B2 D2 B D R2 D F' B2 D2 U L B2 R' B' R D'",
-        "time_taken": 0.17,
-        "timestamp": "2025-05-06 17:55:22"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R2 D2 R2 F U' L U R B' L2 U B' U2 L' U2 R B R' F' L'",
-        "time_taken": 0.33,
-        "timestamp": "2025-05-06 17:55:24"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L' F2 R' L2 U2 F2 L' R U2 B2 F' L2 B' F2 B L' D' F D2 B'",
-        "time_taken": 0.37,
-        "timestamp": "2025-05-06 17:55:35"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L2 R F B D' B' U D' L' F2 R2 L2 D R F2 D' L' B2 F2 D2",
-        "time_taken": 0.32,
-        "timestamp": "2025-05-06 17:55:36"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B' R2 D2 U2 F D F' R' B R D' U' B' U' F R D F2 R D'",
-        "time_taken": 0.34,
-        "timestamp": "2025-05-06 17:55:38"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F2 B' L R' B F B2 L' R' L R2 B2 D2 U' L R2 D F2 D2 U'",
-        "time_taken": 0.35,
-        "timestamp": "2025-05-06 17:55:39"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R B2 U2 B L2 U' B' L U L2 U D' R' D2 F' U' L U2 L' F",
-        "time_taken": 0.82,
-        "timestamp": "2025-05-06 17:55:41"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "L2 U' R2 B' U B L2 F2 U F D F B R' F B2 U' L B D2",
-        "time_taken": 0.82,
-        "timestamp": "2025-05-06 17:55:56"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U R2 F' L' B' L2 R U L2 U2 L2 B2 U2 R' D' U2 R2 D' L' F",
-        "time_taken": 0.55,
-        "timestamp": "2025-05-06 17:55:58"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R2 U2 F' U' B R' L' D' L' F' B F D' U2 B2 L2 F' U F2 D'",
-        "time_taken": 0.38,
-        "timestamp": "2025-05-06 17:55:59"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F' D L R2 L B2 F' R F L2 F2 U2 L U R U' D' U2 F2 B2",
-        "time_taken": 0.35,
-        "timestamp": "2025-05-06 17:56:01"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D' U' F' B2 F D2 U' L' U L D2 U L F' R U2 B L F' D",
-        "time_taken": 0.32,
-        "timestamp": "2025-05-06 17:56:02"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B' U' F D2 B' L2 U F R2 D2 B F B' F' R F U2 F2 B2 L'",
-        "time_taken": 0.72,
-        "timestamp": "2025-05-06 17:57:33"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R' D' R L2 U2 D F R B F U' F2 R D2 U' L2 F2 L' U' B'",
-        "time_taken": 0.82,
-        "timestamp": "2025-05-06 17:57:36"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U R F' R F' U' B L2 U L B' L' U' B' D R2 L F2 D L",
-        "time_taken": 0.63,
-        "timestamp": "2025-05-06 17:57:42"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F2 R' B' R2 L2 F2 B U L2 F' U' L U' F L2 R' B' D' F B",
-        "time_taken": 0.55,
-        "timestamp": "2025-05-06 17:57:43"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "R' F D U' R2 L2 F L R2 F B D R2 U' R' B U D' L B'",
-        "time_taken": 0.47,
-        "timestamp": "2025-05-06 17:57:45"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "B U R' D L' U2 R B D2 U2 R2 D' R D2 R2 U B' L' R' D2",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:25:40"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "D2 R' D2 L2 F2 U F2 B U2 F2 L' F D' F2 U2 F2 R L2 R L",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:25:44"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "U R2 D2 F' B' R B F2 B L' R' F' U2 L' U2 L' D' F L' D'",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:27:04"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F L U' B' U2 F R2 D2 U L2 B' D2 R' U' B2 F2 D2 U' F2 U2",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:27:07"
-    },
-    {
-        "username": "artjomloh",
-        "scramble": "D' R' F B' D L2 U L2 D' F D' R2 D2 B2 R2 U2 R U' L2 D2",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:28:06"
-    },
-    {
-        "username": "artjomloh",
-        "scramble": "B2 L B D2 F' D2 U2 B R' F' U F U2 F D' U' B U2 R2 D2",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:28:12"
-    },
-    {
-        "username": "artjomloh",
-        "scramble": "L F' U2 L R2 F' R' F' B2 R' L' R B' L2 F' L2 F2 R2 F2 B",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:28:13"
-    },
-    {
-        "username": "artjomloh",
-        "scramble": "R2 L' F' R2 U R' D' U2 D L F2 U' F U2 L U' B' D2 R2 B'",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:28:14"
-    },
-    {
-        "username": "artjomloh",
-        "scramble": "L' R2 B2 L2 R B2 R U' B2 R2 F L D' L R2 D L2 B U2 L",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:28:16"
-    },
-    {
-        "username": "quikse",
-        "scramble": "B F R U R B D' F' L2 R2 L' R' F U D2 B D2 R' F' R2",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:39:23"
-    },
-    {
-        "username": "quikse",
-        "scramble": "R D' R' D' F2 R' F2 B' L2 U' D2 U2 F D B2 F2 U L' B' D2",
-        "time_taken": 0,
-        "timestamp": "2025-05-06 18:41:03"
-    },
-    {
-        "username": "dima",
-        "scramble": "L' D2 L B2 R2 L' R F' R' D B2 R' D2 F' B U' F' B' F' R'",
-        "time_taken": 0.91,
-        "timestamp": "2025-05-06 20:33:25"
-    },
-    {
-        "username": "dima",
-        "scramble": "D2 R' B' R2 U2 F L2 B D F2 L' U' B2 F L2 R F L' D2 U'",
-        "time_taken": 2.11,
-        "timestamp": "2025-05-06 20:33:32"
-    },
-    {
-        "username": "dima",
-        "scramble": "R2 B2 R L' D' U' R D2 U L2 F B2 F' D2 U2 F B R U D2",
-        "time_taken": 1.18,
-        "timestamp": "2025-05-06 20:33:39"
-    },
-    {
-        "username": "dima",
-        "scramble": "F' D' F' U R2 D L2 R F2 L D' L B R F2 B L' U2 F' R2",
-        "time_taken": 2.26,
-        "timestamp": "2025-05-06 20:34:11"
-    },
-    {
-        "username": "dima",
-        "scramble": "B' D' F2 B2 R' B' R2 B D F2 L' F L' D2 B' D B' D' R D",
-        "time_taken": 0.47,
-        "timestamp": "2025-05-06 20:34:14"
-    },
-    {
-        "username": "dima",
-        "scramble": "U2 F' D F' D2 L D U2 D F B F2 D2 U' D2 F2 B' D' F L",
-        "time_taken": 0.93,
-        "timestamp": "2025-05-06 20:36:45"
-    },
-    {
-        "username": "dima",
-        "scramble": "R' D' B U2 D2 F2 R' F D' B2 D2 R' D' U' L2 D' B2 R' F' B2",
-        "time_taken": 0.87,
-        "timestamp": "2025-05-06 20:36:52"
-    },
-    {
-        "username": "dima",
-        "scramble": "D L' U R2 L U2 B U F R' L2 U2 D' F L U2 L B' L2 R2",
-        "time_taken": 0.6,
-        "timestamp": "2025-05-06 20:37:39"
-    },
-    {
-        "username": "dima",
-        "scramble": "R2 B2 L U' B D' R U B R2 B' U R2 B2 R' L' F2 B2 L' D'",
-        "time_taken": 0.82,
-        "timestamp": "2025-05-06 20:40:41"
-    },
-    {
-        "username": "dima",
-        "scramble": "D L F' B D' B F2 D' L D' U' R B' L U' F' L U' R B'",
-        "time_taken": 0.5,
-        "timestamp": "2025-05-06 20:40:52"
-    },
-    {
-        "username": "dima",
-        "scramble": "R' F B2 F' R B2 U L' U R' L F' R L2 B' U' L' R2 L U",
-        "time_taken": 3.22,
-        "timestamp": "2025-05-06 20:41:57"
-    },
-    {
-        "username": "dima",
-        "scramble": "R2 L2 R D2 R2 B F R2 U B2 L2 U F2 L2 D' U' R2 F2 D' R2",
-        "time_taken": 1.89,
-        "timestamp": "2025-05-06 20:42:25"
-    },
-    {
-        "username": "dima",
-        "scramble": "D2 R L D2 U L' U' D2 U B' D2 B F B' U' R' F2 R L U2",
-        "time_taken": 0.84,
-        "timestamp": "2025-05-06 20:45:20"
-    },
-    {
-        "username": "dima",
-        "scramble": "F2 U F2 D' L B F' D R' B2 U D R2 U2 L' R' L2 B' R' B'",
-        "time_taken": 0.78,
-        "timestamp": "2025-05-06 20:47:14"
-    },
-    {
-        "username": "dima",
-        "scramble": "R2 B2 R L B L R2 L2 U B2 D' U2 D2 R' F' R2 U' L2 D F",
-        "time_taken": 1.5,
-        "timestamp": "2025-05-06 20:47:18"
-    },
-    {
-        "username": "dima",
-        "scramble": "F' B2 D2 L2 R2 B L2 F' D2 U D' U2 F' U2 F2 D' R U2 D2 L'",
-        "time_taken": 0.92,
-        "timestamp": "2025-05-06 20:48:34"
-    },
-    {
-        "username": "dima",
-        "scramble": "B F2 B D' B L R2 L2 U' F2 L2 D' R2 U2 D2 U B2 D' B2 U'",
-        "time_taken": 1.84,
-        "timestamp": "2025-05-06 20:48:38"
-    },
-    {
-        "username": "dima",
-        "scramble": "F2 R' F R L D2 L' R L2 U2 B D2 U' F U2 D L B' L B",
-        "time_taken": 4.37,
-        "timestamp": "2025-05-06 20:49:45"
-    },
-    {
-        "username": "dima",
-        "scramble": "L F U2 D F' L' R L2 D2 F2 D U2 L F R' B2 R' U2 F' D",
-        "time_taken": 0.93,
-        "timestamp": "2025-05-06 20:49:49"
-    },
-    {
-        "username": "dima",
-        "scramble": "U2 B R' D2 L' F2 B2 R2 B2 F U' F2 D' F R2 D2 B2 U2 R2 L'",
-        "time_taken": 0.98,
-        "timestamp": "2025-05-06 20:49:51"
-    },
-    {
-        "username": "dima",
-        "scramble": "F2 D2 F' U' L2 F2 D2 U F B U R2 B R' B' D2 F' D2 B L",
-        "time_taken": 1.11,
-        "timestamp": "2025-05-06 20:49:54"
-    },
-    {
-        "username": "dima",
-        "scramble": "B' L2 D2 R2 L' R L B R' B' F B2 L' R L' B R2 B2 L R",
-        "time_taken": 1.29,
-        "timestamp": "2025-05-06 20:49:57"
-    },
-    {
-        "username": "dima",
-        "scramble": "D L' B' R2 F' D U F' R2 B R U' R' D' B D2 F2 D2 R2 L2",
+        "username": "test",
+        "scramble": "D R' B2 U' B F B2 L F2 D U' R U' D2 U D2 R' D' U2 F2",
         "time_taken": 0.71,
-        "timestamp": "2025-05-06 20:50:09"
+        "timestamp": "2025-05-07 14:09:30"
+    },
+    {
+        "username": "test",
+        "scramble": "L' F' U' B' D' L2 B D2 U2 B' F2 U' B F2 B' U F R2 L B",
+        "time_taken": 0.23,
+        "timestamp": "2025-05-07 14:09:31"
+    },
+    {
+        "username": "test",
+        "scramble": "D' U' D2 B' L2 F B R L' F B U L' B' U B R' F D2 U'",
+        "time_taken": 0.14,
+        "timestamp": "2025-05-07 14:09:34"
+    },
+    {
+        "username": "test",
+        "scramble": "F U' L F2 D2 L2 F2 U' L' D' F' D L R' U2 L D U F' D'",
+        "time_taken": 0.11,
+        "timestamp": "2025-05-07 14:09:35"
+    },
+    {
+        "username": "test",
+        "scramble": "U D' R F' L' B' R L2 B' F2 L' R F L R2 F' B' R' U2 F",
+        "time_taken": 0.1,
+        "timestamp": "2025-05-07 14:09:38"
+    },
+    {
+        "username": "test",
+        "scramble": "D2 F L F' B2 R F2 R2 B2 F2 U L D2 R U L' B2 D2 R B'",
+        "time_taken": 0.1,
+        "timestamp": "2025-05-07 14:09:39"
+    },
+    {
+        "username": "test",
+        "scramble": "B' D2 F2 L2 F' L2 B2 L2 D' B2 F R' U R L D' F D' L B'",
+        "time_taken": 0.1,
+        "timestamp": "2025-05-07 14:09:41"
+    },
+    {
+        "username": "test",
+        "scramble": "B L' R B2 U' L' B2 D2 R D' R' D B' L R' F D L' R' L'",
+        "time_taken": 0.09,
+        "timestamp": "2025-05-07 14:09:43"
+    },
+    {
+        "username": "test",
+        "scramble": "B' R' B L' U B' R F L F2 B' D R L2 U D L U' L' F2",
+        "time_taken": 0.11,
+        "timestamp": "2025-05-07 14:09:45"
+    },
+    {
+        "username": "test",
+        "scramble": "L U F U R' U' B2 U F B' D U' L2 F' U2 B F2 L' F2 B",
+        "time_taken": 0.1,
+        "timestamp": "2025-05-07 14:09:47"
+    },
+    {
+        "username": "test",
+        "scramble": "F' D' R' L R2 U2 F' R U D U2 L' D2 U' F2 R' F B F' L",
+        "time_taken": 0.1,
+        "timestamp": "2025-05-07 14:09:49"
+    },
+    {
+        "username": "test",
+        "scramble": "L' B2 F2 L2 D' F L2 B L2 R2 B' R' U2 D' F B2 U2 F' U D",
+        "time_taken": 0.08,
+        "timestamp": "2025-05-07 14:09:51"
+    },
+    {
+        "username": "test",
+        "scramble": "L2 D2 R2 F' U2 B D' U2 D2 R L' F2 D2 R U2 F U2 F R2 B'",
+        "time_taken": 0.1,
+        "timestamp": "2025-05-07 14:09:53"
+    },
+    {
+        "username": "test",
+        "scramble": "U F' D2 B L' D U B R D2 B2 L2 B D2 U R' D U2 D2 F'",
+        "time_taken": 0.11,
+        "timestamp": "2025-05-07 14:09:54"
+    },
+    {
+        "username": "test",
+        "scramble": "L' D' L F' L2 R D' L2 F' B' L2 B' F' B2 U L2 F D' L' B'",
+        "time_taken": 0.46,
+        "timestamp": "2025-05-07 14:10:49"
     },
     {
         "username": "dima",
-        "scramble": "U B2 L2 U2 D2 R D' L F2 B' D' B' F' B' D L F' U B L2",
-        "time_taken": 0.99,
-        "timestamp": "2025-05-06 20:50:22"
+        "scramble": "U R' L2 B F R D2 F2 D' F U2 F2 R' U2 B' L R2 F L R'",
+        "time_taken": 0.68,
+        "timestamp": "2025-05-07 14:11:11"
     },
     {
         "username": "dima",
-        "scramble": "D L2 B F' L' R' L2 U2 F' B' F2 R2 F2 R2 L2 U' D U2 R2 L'",
-        "time_taken": 1.09,
-        "timestamp": "2025-05-06 20:50:29"
+        "scramble": "F2 B2 U2 F' L D L' R2 D2 L2 B2 U2 L' R2 D B U R2 F' R2",
+        "time_taken": 0.17,
+        "timestamp": "2025-05-07 14:11:34"
     },
     {
         "username": "dima",
-        "scramble": "F L D2 U F' U B F' U2 L B D2 R' U D' R U2 F2 U B",
-        "time_taken": 2.16,
-        "timestamp": "2025-05-06 20:50:41"
+        "scramble": "B2 D' R F2 D' B' L U2 L' U B' L R2 B U' B F2 U R' B2",
+        "time_taken": 0.21,
+        "timestamp": "2025-05-07 14:11:35"
     },
     {
         "username": "dima",
-        "scramble": "D2 F L' F' L2 U' B2 R B D2 U' L2 R2 U' B' F' L' D2 B2 L'",
-        "time_taken": 2.37,
-        "timestamp": "2025-05-06 21:00:49"
+        "scramble": "R D U R' D2 U L' R2 L D' B' L2 U' L R' U2 R2 B' U' R'",
+        "time_taken": 0.26,
+        "timestamp": "2025-05-07 14:11:37"
     },
     {
         "username": "dima",
-        "scramble": "B2 U L D2 F L2 D' F L B' D' F L2 U2 L' D U L R L2",
-        "time_taken": 2.17,
-        "timestamp": "2025-05-06 21:04:57"
-    },
-    {
-        "username": "dima",
-        "scramble": "B' F2 B' R B2 U L2 F2 B R2 U B2 R' U2 L2 D2 B U2 D U'",
-        "time_taken": 0.84,
-        "timestamp": "2025-05-06 21:06:41"
-    },
-    {
-        "username": "dima",
-        "scramble": "F D' L2 U L2 B' F B2 U2 F B U2 R L2 U' L2 F2 U B R2",
-        "time_taken": 0.9,
-        "timestamp": "2025-05-06 21:09:44"
-    },
-    {
-        "username": "dima",
-        "scramble": "B2 U' F' R B F2 B2 D' U F' L' B2 U2 L2 R' B R2 U' R L2",
-        "time_taken": 1.0,
-        "timestamp": "2025-05-06 21:15:23"
-    },
-    {
-        "username": "dima2",
-        "scramble": "F U D2 R U' F' R2 U' D' F2 B D F U R2 L' U' F2 R D'",
-        "time_taken": 1.53,
-        "timestamp": "2025-05-06 21:40:17"
-    },
-    {
-        "username": "Renars",
-        "scramble": "F2 R D2 B' U B2 U2 F L2 R D F2 U' B2 U2 D' R' D' F L2",
-        "time_taken": 21.46,
-        "timestamp": "2025-05-06 21:43:15"
-    },
-    {
-        "username": "Renars",
-        "scramble": "R2 B F R' U B2 U' L U' D R2 B' L' U2 L' B2 U' B2 U D'",
-        "time_taken": 0.6,
-        "timestamp": "2025-05-06 21:43:49"
-    },
-    {
-        "username": "Renars",
-        "scramble": "R' U' L2 U R' F2 R L F R B' R L' R2 D' L2 D' U F2 B",
-        "time_taken": 1.55,
-        "timestamp": "2025-05-06 21:43:52"
-    },
-    {
-        "username": "Renars",
-        "scramble": "R2 D U' F R' L' U' L B' D U' F' D2 F' B L2 F2 B' R' F",
-        "time_taken": 2.82,
-        "timestamp": "2025-05-06 21:43:56"
-    },
-    {
-        "username": "Renars",
-        "scramble": "F U2 R' L2 R' D R D2 L' U F' L2 R L2 F2 U F2 L2 B U",
-        "time_taken": 0.85,
-        "timestamp": "2025-05-06 21:43:59"
-    },
-    {
-        "username": "Renars",
-        "scramble": "U D' U2 B D L' F' D F L' F2 D R2 U' F2 D' L R U2 L",
-        "time_taken": 4.84,
-        "timestamp": "2025-05-06 21:44:58"
-    },
-    {
-        "username": "Renars",
-        "scramble": "R' B D2 L F U2 D' R2 D2 B F U2 F R2 U D2 F2 U B F'",
-        "time_taken": 2.52,
-        "timestamp": "2025-05-06 21:45:36"
-    },
-    {
-        "username": "Renars",
-        "scramble": "F2 R' U2 B U R2 B' F2 L' D' L F' B2 D2 F R' B2 F2 U2 R",
-        "time_taken": 5.53,
-        "timestamp": "2025-05-06 21:46:07"
-    },
-    {
-        "username": "quikse1",
-        "scramble": "F2 R2 L2 B2 R' F D' L' B' D2 L' R L B' L R D' L' R F2",
-        "time_taken": 1.0,
-        "timestamp": "2025-05-06 22:54:55"
+        "scramble": "L2 R' L D L2 B U D L2 R D' R' B' F R' F' B2 D2 F U2",
+        "time_taken": 0.34,
+        "timestamp": "2025-05-07 14:11:38"
     }
 ]

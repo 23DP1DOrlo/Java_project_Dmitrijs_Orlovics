@@ -71,7 +71,6 @@ class LoginWindow(QWidget):
             password[0].isupper()
         )
 
-
     def open_timer_window(self, username):
         self.hide()
         self.timer_window = TimerWindow(username)

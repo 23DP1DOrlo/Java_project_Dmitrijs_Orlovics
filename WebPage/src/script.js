@@ -74,7 +74,7 @@ document.addEventListener("keyup", (e) => {
         const heldTime = performance.now() - spacePressedAt;
         spacePressedAt = null;
 
-        if (!isRunning && heldTime >= 1000) {
+        if (!isRunning && heldTime >= 500) {
             elapsed = 0;
             timerElement.textContent = "00:00:00";
             startTimer();
