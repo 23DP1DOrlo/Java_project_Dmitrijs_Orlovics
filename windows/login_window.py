@@ -41,6 +41,11 @@ class LoginWindow(QWidget):
         username = self.username_input.text()
         password = self.password_input.text()
 
+        if not self.validate_username(username):
+            QMessageBox.warning(self, "Invalid Username", 
+                "Username must be between 6 and 20 characters.")
+            return
+
         if not self.validate_password(password):
             QMessageBox.warning(self, "Invalid Password", 
                 "Password must start with an uppercase letter and be at least 6 characters long.")
@@ -52,10 +57,14 @@ class LoginWindow(QWidget):
         else:
             QMessageBox.warning(self, "Login Failed", msg)
 
-
     def handle_signup(self):
         username = self.username_input.text()
         password = self.password_input.text()
+
+        if not self.validate_username(username):
+            QMessageBox.warning(self, "Invalid Username", 
+                "Username must be between 6 and 20 characters.")
+            return
 
         if not self.validate_password(password):
             QMessageBox.warning(self, "Invalid Password", 
@@ -70,6 +79,9 @@ class LoginWindow(QWidget):
             len(password) >= 6 and 
             password[0].isupper()
         )
+
+    def validate_username(self, username):
+        return 6 <= len(username) <= 20
 
     def open_timer_window(self, username):
         self.hide()
